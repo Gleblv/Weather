@@ -1,0 +1,27 @@
+.additional-info {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 5%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5%;
+    padding-top: 5px;
+}
+
+.additional-info-item {
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1190px) {
+    .additional-info {
+        margin-top: 7.5%;
+    }
+}
+
+@media (max-width: 685px) {
+    .additional-info {
+        margin-top: 10%;
+    }
+}

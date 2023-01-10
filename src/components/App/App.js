@@ -1,10 +1,16 @@
-import Search from './Search/Search';
+import Search from '../Search/Search';
+import MainInfo from '../MainInfo/MainInfo';
+import AdditionalInfo from '../AdditionalInfo/AdditionalInfo';
 
 import './App.css';
 
 function App() {
   return (
-    <Search/>
+    <div className="container">
+      <Search/>
+      <MainInfo/>
+      <AdditionalInfo/>
+    </div>
   );
 }
 

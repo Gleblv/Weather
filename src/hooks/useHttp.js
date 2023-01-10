@@ -17,3 +17,6 @@ export const useHttp = () => {
 
     return {request}
 }
+
+// API call - https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+// API key - 764fdc74ddc4e91de9a34187c8deacb3

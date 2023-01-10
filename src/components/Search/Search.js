@@ -1,10 +1,10 @@
-import './search.css'
+import './Search.css'
 
 const Search = () => {
     return (
-        <div className='serch'>
+        <div className='search'>
             <input type='text' placeholder='City' className='search-input'/>
-            <button className='search-button'>Поиск</button>
+            <button className='search-button'>Search</button>
         </div>
     )
 }

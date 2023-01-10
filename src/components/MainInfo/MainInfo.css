@@ -1,0 +1,48 @@
+.main-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:center;
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    margin-bottom: 5%;
+}
+
+.city-name {
+    order: 0;
+    margin-left: 5%;
+    width: 50%;
+    height: auto;
+    border: 0;
+    border-radius: 1em;
+    padding: 5px;
+    padding-left: 15px;
+    font-size: 120%;
+    margin-bottom: 10%;
+}
+
+.weather-meaning {
+    width: 50px;
+    order: 1;
+    margin-right: 5%;
+    width: 20%;
+    text-align: center;
+    font-size: 150%;
+    border: 0;
+    border-radius: 1em;
+    padding: 5px;
+}
+
+.weather-descr {
+    background:#7D82B8;
+    order: 2;
+    margin-left: 5%;
+    width: 50%;
+    height: auto;
+    border: 0;
+    border-radius: 1em;
+    padding: 5px;
+    padding-left: 15px;
+    font-size: 120%;
+}
