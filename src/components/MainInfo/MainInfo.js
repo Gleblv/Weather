@@ -1,5 +1,7 @@
 import { useSelector } from 'react-redux';
 
+//http://openweathermap.org/img/wn/10d@2x.png
+
 import './MainInfo.css';
 
 const MainInfo = () => {
@@ -11,13 +13,15 @@ const MainInfo = () => {
             return ({
                 weather: state.weatherData.weather[0].main,
                 description: state.weatherData.weather[0].description,
-                temp: ~~(parseFloat(state.weatherData.main.temp))
+                temp: ~~(parseFloat(state.weatherData.main.temp)),
+                ico : state.weatherData.weather[0].icon
             })
         } else {
             return ({
                 weather: 'Weather',
                 description: 'Description',
-                temp: '0'
+                temp: '0',
+                ico: 'Weather icon'
             })
         }
     })
@@ -25,6 +29,7 @@ const MainInfo = () => {
     return (
         <div className='main-info'>
             <div className='city-name'>{city ? `Weather today in ${city}` : 'Write the city'}</div>
+            <img src={`http://openweathermap.org/img/wn/${mainWeatherData.ico}@2x.png`} alt="Weather icon" className='main-ico'></img>
             <div className='weather-descr'>
                 <div className='weather-main'>{mainWeatherData.weather}</div>
                 <div className='weather-description'>{mainWeatherData.description}</div>

@@ -50,3 +50,8 @@
 .weather-main {
     margin-bottom: 5%;
 }
+
+.main-ico {
+    order: 3;
+    margin-right: 7.5%;
+}
