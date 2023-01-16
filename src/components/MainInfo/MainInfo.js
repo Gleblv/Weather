@@ -1,7 +1,5 @@
 import { useSelector } from 'react-redux';
 
-//http://openweathermap.org/img/wn/10d@2x.png
-
 import './MainInfo.css';
 
 const MainInfo = () => {
